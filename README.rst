@@ -1,6 +1,6 @@
 |docker build| |docker pulls| |license| 
 
-.. |docker build| image:: https://img.shields.io/docker/build/xridge/flexfolio.svg
+.. |docker build| image:: https://img.shields.io/docker/cloud/build/xridge/flexfolio.svg
 .. |docker pulls| image:: https://img.shields.io/docker/pulls/xridge/flexfolio.svg
 .. |license| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
 
