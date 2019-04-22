@@ -247,7 +247,7 @@ class FlexStatement:
             [pd.DataFrame(
                 data={'position': [np.nan, final_qty]},
                 index=[start_date, end_date]),
-             trades.to_frame('trade_qty')], sort=True)  # type: pd.DataFrame
+             trades.to_frame('trade_qty')])  # type: pd.DataFrame
         df.sort_index(inplace=True)
 
         df = df.resample('1D').sum()
