@@ -49,6 +49,13 @@ def main() -> None:
 )
 def fetch_statement(ib_api_token: str, ib_query_id: str,
                     target_file: str) -> None:
+    # Proxy the call via an interim function so that other
+    # packages can import this fn and re-use in their cli
+    return fetch_statement_logic(ib_api_token, ib_query_id, target_file)
+
+
+def fetch_statement_logic(ib_api_token: str, ib_query_id: str,
+                          target_file: str) -> None:
     def _request_statement() -> Tuple[str, str]:
         url = "{base}.SendRequest?t={token}&q={query_id}&v=3".format(
             base=FLEX_SERVICE_BASE_URL, token=ib_api_token,
