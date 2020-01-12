@@ -7,7 +7,7 @@ import logging
 import os
 
 
-from iexfinance import get_historical_data
+from iexfinance.stocks import get_historical_data
 
 import pandas as pd
 

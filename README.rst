@@ -19,7 +19,7 @@ Usage
   2019-04-06 16:23:17,097 - flexfolio.cli - INFO - Requesting statement
   2019-04-06 16:23:17,770 - flexfolio.cli - INFO - Downloading statement
   
-  $ docker run -v $(pwd)/workdir:/workdir xridge/flexfolio:latest statement_to_pyfolio --output-format hdf5 /workdir/flex_report.xml /workdir
+  $ docker run -v $(pwd)/workdir:/workdir -e IEX_TOKEN=pk_TOKEN_COMES_HERE xridge/flexfolio:latest statement_to_pyfolio --output-format hdf5 /workdir/flex_report.xml /workdir
   2019-04-06 16:24:42,153 - flexfolio.cli - INFO - Storing returns to /workdir/flex_report-returns.hdf5
   2019-04-06 16:24:57,202 - flexfolio.cli - INFO - Storing positions to /workdir/flex_report-positions.hdf5
   2019-04-06 16:24:57,280 - flexfolio.cli - INFO - Storing transactions to /workdir/flex_report-transactions.hdf5
