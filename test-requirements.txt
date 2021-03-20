@@ -1,5 +1,5 @@
 Babel==2.6.0
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 Pygments==2.3.1
 Sphinx==1.7.1
